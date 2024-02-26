@@ -7,7 +7,7 @@ export const stateFacts = [
 ];
 
 export const cityFacts = {
-  albany: [
+  ["albany-capital"]: [
     "Herman Melville, author of Moby-Dick, attended Albany Academy and Albany Classical School. <a href='/sources.html'><sup>[1]</sup></a>",
     "Albany is the birthplace of the first plastic billiard ball. <a href='/sources.html' aria-label='go to page sources'><sup>[2]</sup></a>",
     "Albany is named for the Duke of Albany. <a href='/sources.html' aria-label='go to page sources'><sup>[3]</sup></a>",

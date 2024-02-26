@@ -41,5 +41,5 @@ footerYear.innerHTML = year;
 // set the background image of the middle sections depending on the page
 if (pageName === "index" || Object.keys(cityFacts).includes(pageName)) {
   const cityBackground = document.querySelector(".info-bg");
-  cityBackground.style.backgroundImage = `url(/images/${pageName}-bg.png)`;
+  cityBackground.style.backgroundImage = `url(./images/${pageName}-bg.png)`;
 }

@@ -322,7 +322,7 @@ tr:nth-child(even) {
 
 .info-bg {
   /* Background placeholder until JS renders */
-  background-image: url("/images/index-bg.png");
+  background-image: url("./images/index-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
