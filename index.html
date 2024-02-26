@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Scripts -->
+    <script src="js/global-script.js" type="module" defer></script>
+    <script src="https://kit.fontawesome.com/67271c53b9.js" crossorigin="anonymous"></script>
+    <meta name="description" content="New York State Overview - WGU D277">
+    <title>NYS | Overview</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="page-header">
+        <div class="page-header__content container">
+            <img class="page-header__content-img" src="/images/ny-seal.png" alt="New York State Seal" height="100"
+                width="100" />
+            <div class="page-header__content-text">
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <div class="hamburger__wrapper">
+                        <div class="hamburger__line"></div>
+                        <div class="hamburger__line"></div>
+                        <div class="hamburger__line"></div>
+                    </div>
+                </button>
+                <h1>
+                    New York State
+                </h1>
+                <span>Excelsior</span>
+            </div>
+        </div>
+        <!-- Start Main Nav -->
+        <nav class="main-navigation">
+            <ul class="main-navigation__list container">
+                <li class="main-navigation__list-item active">
+                    <a href="/index.html">
+                        <i class="fa-solid fa-caret-right"></i>Home
+                    </a>
+                </li>
+                <li class="main-navigation__list-item">
+                    <a href="/albany.html">
+                        <i class="fa-solid fa-caret-right"></i>Albany
+                    </a>
+                </li>
+                <li class="main-navigation__list-item">
+                    <a href="/syracuse.html">
+                        <i class="fa-solid fa-caret-right"></i>Syracuse
+                    </a>
+                </li>
+                <li class="main-navigation__list-item">
+                    <a href="/alexandria-bay.html">
+                        <i class="fa-solid fa-caret-right"></i>Alexandria Bay
+                    </a>
+                </li>
+                <li class="main-navigation__list-item">
+                    <a href="/contact.html">
+                        <i class="fa-solid fa-caret-right"></i>Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Main Nav -->
+    </header>
+    <!-- End Header -->
+    <main>
+        <section class="overview container">
+            <img class="overview__img" src="/images/ny-state-filled.png" alt="New York State Outline" height="344"
+                width="446" />
+            <div class="overview__text">
+                <h2>New York State Overview <i>-<small>The Empire State</small></i></h2>
+                <p class="border-top border-bottom">
+                    Residing in the northeastern United States, New York was one of the original thirteen colonies
+                    established in 1664. With over 20 million residents, it is the fourth most populous state.
+                    It's geography varies greatly, from the Adirondack Mountains in the north, to the Great Lakes to
+                    the west, to all the platues and lowlands in between. New York City, the largest city in the United
+                    States, is located in the southeastern part of the state. The state is known for its diverse
+                    culture, and is a major center for finance, fashion, and the arts.
+                </p>
+            </div>
+        </section>
+        <section class="info-section info-bg">
+            <div class="container shadow">
+                <h2>State Flag and Information</h2>
+                <img src="/images/ny-flag.png" alt="New York States Flag" class="shadow rounded" height="250" width="500" />
+                <ul>
+                    <li><b>[Capital:</b> Albany<b>]</b></li>
+                    <li><b>[Slogan:</b> I ❤️ NY<b>]</b></li>
+                    <li><b>[Motto:</b> Excelsior<b>]</b></li>
+                    <li><b>[Nickname:</b> The Empire State<b>]</b></li>
+                    <li><b>[Population:</b> 20.1M<b>]</b></li>
+                </ul>
+            </div>
+        </section>
+        <section class="fact-section">
+            <div class="container">
+                <div class="fact-section-list">
+                    <h3>
+                        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                        Fun Facts About New York State
+                    </h3>
+                    <ul class="border-top">
+                        <li>
+                            <i class="fa-solid fa-plane-departure" aria-hidden="true"></i>
+                            Albany Intl. Airport is the oldest municipal airport in the US.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-helmet-un" aria-hidden="true"></i>
+                            The United Nations is headquartered in New York City.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-tractor" aria-hidden="true"></i>
+                            Farmland covers 1/3<sup>rd</sup> of the state's land area.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-feather" aria-hidden="true"></i>
+                            The state's bird is the bluebird.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+                            The state's flower is the rose
+                        </li>
+                    </ul>
+                </div>
+                <aside class="fact-section__random">
+                    <h3><i class="fa-solid fa-circle-info" aria-hidden="true"></i>Did You
+                        Know?</h3>
+                    <!-- #state-facts__text content is rendered here dynamically with JavaScript -->
+                    <p id="state-facts__text" class="border-top">Loading...</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class=" page-footer">
+        <!-- #year content is rendered here dynamically with JavaScript, using '2024' as a fallback -->
+        <a href="/sources.html">Sources</a>
+        <p class="page-footer__text">&copy; <span id="year">2024</span> <a
+                href="https://www.linkedin.com/in/andy-ashley-b70539204/" target="_blank" rel="noopener"
+                aria-label="Open LinkedIn profile">Andy Ashley</a> <span>|</span>
+            WGU<span>-</span>D277</p>
+    </footer>
+</body>
+
+</html>
