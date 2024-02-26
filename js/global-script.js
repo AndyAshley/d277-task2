@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const pageName = path.replace(".html", "");
 
   // on DOM load, set the text content of the random fact depending on the page
-  if (pageName === "index") {
+  if (pageName === "index" || pageName.trim() === "") {
+    console.log(pageName);
     const stateFactContainer = document.getElementById("state-facts__text");
     stateFactContainer.innerHTML = getRandomFact(stateFacts);
   }
@@ -40,8 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
   footerYear.innerHTML = year;
 
   // set the background image of the middle sections depending on the page
-  if (pageName === "index" || Object.keys(cityFacts).includes(pageName)) {
+  if (Object.keys(cityFacts).includes(pageName)) {
     const cityBackground = document.querySelector(".info-bg");
     cityBackground.style.backgroundImage = `url(./images/${pageName}-bg.png)`;
+  }
+
+  // and if its the index page
+  if (pageName === "index" || pageName.trim() === "") {
+    const stateBackground = document.querySelector(".info-bg");
+    stateBackground.style.backgroundImage = `url(./images/index-bg.png)`;
   }
 });
